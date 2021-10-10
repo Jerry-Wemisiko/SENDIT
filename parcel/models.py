@@ -33,10 +33,14 @@ class Order(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
 
+        transit_status = [
+        ("In Transit", "In Transit"),
+        ("Delivered", "Delivered"),
+        ("Cancelled", "Cancelled")
+    ]
 
-
-load_sizes = [
-    ("Small", "Small"),
-    ("Medium", "Medium"),
-    ("Large", "Large")
-]
+    load_sizes = [
+        ("Small", "Small"),
+        ("Medium", "Medium"),
+        ("Large", "Large")
+    ]
