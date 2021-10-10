@@ -1,0 +1,653 @@
+{
+    "authenticationResultCode": "ValidCredentials",
+    "brandLogoUri": "http:\/\/dev.virtualearth.net\/Branding\/logo_powered_by.png",
+    "copyright": "Copyright © 2021 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.",
+    "resourceSets": [
+      {
+        "estimatedTotal": 1,
+        "resources": [
+          {
+            "__type": "Route:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+            "bbox": [
+              47.529964,
+              -122.189479,
+              47.674913,
+              -122.023427
+            ],
+            "id": "v70,h-1821080325,i0,a2,cen-US,dAAAAAAAAAAA1,y0,s1,m1,o1,t4,w91rQe2PWR0C1-1WA74dewA2~AIF9164p8foAAADgAQAAAAAA0~UmVkbW9uZCwgV0E1~~~~~~~~v12,wbcfUXdnDR0DmdcQhG4JewA2~AIF9166hAAkBAADgAQAAAAAA0~SXNzYXF1YWgsIFdB0~~~~~~~~v12,k1",
+            "distanceUnit": "Kilometer",
+            "durationUnit": "Second",
+            "price": -1,
+            "routeLegs": [
+              {
+                "actualEnd": {
+                  "type": "Point",
+                  "coordinates": [
+                    47.530072,
+                    -122.032904
+                  ]
+                },
+                "actualStart": {
+                  "type": "Point",
+                  "coordinates": [
+                    47.674913,
+                    -122.123995
+                  ]
+                },
+                "alternateVias": [],
+                "cost": 0,
+                "description": "WA-520 W, I-90 E",
+                "endLocation": {
+                  "bbox": [
+                    47.509071,
+                    -122.100563,
+                    47.577385,
+                    -121.985733
+                  ],
+                  "name": "Issaquah, WA",
+                  "point": {
+                    "type": "Point",
+                    "coordinates": [
+                      47.530071,
+                      -122.032906
+                    ]
+                  },
+                  "address": {
+                    "adminDistrict": "WA",
+                    "adminDistrict2": "King County",
+                    "countryRegion": "United States",
+                    "formattedAddress": "Issaquah, WA",
+                    "locality": "Issaquah"
+                  },
+                  "confidence": "High",
+                  "entityType": "PopulatedPlace",
+                  "geocodePoints": [
+                    {
+                      "type": "Point",
+                      "coordinates": [
+                        47.530071,
+                        -122.032906
+                      ],
+                      "calculationMethod": "Rooftop",
+                      "usageTypes": [
+                        "Display"
+                      ]
+                    }
+                  ],
+                  "matchCodes": [
+                    "Good"
+                  ]
+                },
+                "endTime": "\/Date(1633681955347-0700)\/",
+                "itineraryItems": [
+                  {
+                    "compassDirection": "east",
+                    "details": [
+                      {
+                        "compassDegrees": 91,
+                        "endPathIndices": [
+                          1
+                        ],
+                        "maneuverType": "DepartStart",
+                        "mode": "Driving",
+                        "names": [
+                          "NE 80th St"
+                        ],
+                        "roadType": "Arterial",
+                        "startPathIndices": [
+                          0
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "DepartStart",
+                      "text": "Head east on NE 80th St toward Leary Way NE"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.674913,
+                        -122.123995
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "tollZone": "",
+                    "towardsRoadName": "Leary Way NE",
+                    "transitTerminus": "",
+                    "travelDistance": 0.12,
+                    "travelDuration": 29,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "south",
+                    "details": [
+                      {
+                        "compassDegrees": 202,
+                        "endPathIndices": [
+                          7
+                        ],
+                        "locationCodes": [
+                          "114-10641",
+                          "114N10642"
+                        ],
+                        "maneuverType": "TurnRight",
+                        "mode": "Driving",
+                        "names": [
+                          "Leary Way NE"
+                        ],
+                        "roadType": "Arterial",
+                        "startPathIndices": [
+                          1
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "TurnRight",
+                      "text": "Turn right onto Leary Way NE"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.674875,
+                        -122.122387
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 0.798,
+                    "travelDuration": 158,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "southwest",
+                    "details": [
+                      {
+                        "compassDegrees": 217,
+                        "endPathIndices": [
+                          18
+                        ],
+                        "locationCodes": [
+                          "114N10641"
+                        ],
+                        "maneuverType": "TakeRampRight",
+                        "mode": "Driving",
+                        "roadType": "Arterial",
+                        "startPathIndices": [
+                          7
+                        ]
+                      },
+                      {
+                        "compassDegrees": 231,
+                        "endPathIndices": [
+                          52
+                        ],
+                        "locationCodes": [
+                          "114-04240",
+                          "114N04240",
+                          "114-04239",
+                          "114N04239",
+                          "114-04238",
+                          "114N04238",
+                          "114-04237",
+                          "114N04237",
+                          "114-04236",
+                          "114N04236"
+                        ],
+                        "maneuverType": "Merge",
+                        "mode": "Driving",
+                        "names": [
+                          "WA-520 W"
+                        ],
+                        "roadShieldRequestParameters": {
+                          "bucket": 656001,
+                          "shields": [
+                            {
+                              "labels": [
+                                "520"
+                              ],
+                              "roadShieldType": 3
+                            }
+                          ]
+                        },
+                        "roadType": "LimitedAccessHighway",
+                        "startPathIndices": [
+                          18
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "RampThenHighwayRight",
+                      "text": "Take the ramp on the right for WA-520 W"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.669672,
+                        -122.129038
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 8.027,
+                    "travelDuration": 315,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "south",
+                    "details": [
+                      {
+                        "compassDegrees": 299,
+                        "endPathIndices": [
+                          61
+                        ],
+                        "locationCodes": [
+                          "114P13706"
+                        ],
+                        "maneuverType": "TakeRampRight",
+                        "mode": "Driving",
+                        "roadType": "Ramp",
+                        "startPathIndices": [
+                          52
+                        ]
+                      },
+                      {
+                        "compassDegrees": 193,
+                        "endPathIndices": [
+                          80
+                        ],
+                        "locationCodes": [
+                          "114N04137",
+                          "114-04136",
+                          "114N04136",
+                          "114-04135",
+                          "114N04135",
+                          "114-04134",
+                          "114N04134",
+                          "114-04133"
+                        ],
+                        "maneuverType": "Merge",
+                        "mode": "Driving",
+                        "names": [
+                          "I-405 South"
+                        ],
+                        "roadShieldRequestParameters": {
+                          "bucket": 656001,
+                          "shields": [
+                            {
+                              "labels": [
+                                "405"
+                              ],
+                              "roadShieldType": 1
+                            }
+                          ]
+                        },
+                        "roadType": "LimitedAccessHighway",
+                        "startPathIndices": [
+                          61
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "RampThenHighwayRight",
+                      "text": "Take the ramp on the right for I-405 South and head toward Renton"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.632478,
+                        -122.188242
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "signs": [
+                      "Renton",
+                      "I-405 South"
+                    ],
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 5.599,
+                    "travelDuration": 203,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "east",
+                    "details": [
+                      {
+                        "compassDegrees": 164,
+                        "endPathIndices": [
+                          90
+                        ],
+                        "locationCodes": [
+                          "114P13608",
+                          "114P13614",
+                          "114P13592"
+                        ],
+                        "maneuverType": "TakeRampRight",
+                        "mode": "Driving",
+                        "roadType": "Ramp",
+                        "startPathIndices": [
+                          80
+                        ]
+                      },
+                      {
+                        "compassDegrees": 91,
+                        "endPathIndices": [
+                          109
+                        ],
+                        "locationCodes": [
+                          "114-04111",
+                          "114N04111",
+                          "114-04110",
+                          "114N04110",
+                          "114-04109",
+                          "114N04109",
+                          "114-04108",
+                          "114N04108",
+                          "114-04107",
+                          "114N04107"
+                        ],
+                        "maneuverType": "Merge",
+                        "mode": "Driving",
+                        "names": [
+                          "I-90 East"
+                        ],
+                        "roadShieldRequestParameters": {
+                          "bucket": 656001,
+                          "shields": [
+                            {
+                              "labels": [
+                                "90"
+                              ],
+                              "roadShieldType": 1
+                            }
+                          ]
+                        },
+                        "roadType": "LimitedAccessHighway",
+                        "startPathIndices": [
+                          90
+                        ]
+                      }
+                    ],
+                    "exit": "11",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "RampThenHighwayRight",
+                      "text": "At Exit 11, head right on the ramp for I-90 East toward Spokane"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.586964,
+                        -122.179468
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "signs": [
+                      "Spokane",
+                      "I-90 East"
+                    ],
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 12.665,
+                    "travelDuration": 444,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "southeast",
+                    "details": [
+                      {
+                        "compassDegrees": 147,
+                        "endPathIndices": [
+                          121
+                        ],
+                        "locationCodes": [
+                          "114P21285",
+                          "114P21289"
+                        ],
+                        "maneuverType": "TakeRampRight",
+                        "mode": "Driving",
+                        "roadType": "Ramp",
+                        "startPathIndices": [
+                          109
+                        ]
+                      }
+                    ],
+                    "exit": "18",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "TakeRampRight",
+                      "text": "At Exit 18, head on the ramp right and follow signs for E Sunset Way \/ Highlands Dr"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.538787,
+                        -122.034321
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "signs": [
+                      "E Sunset Way",
+                      "Highlands Dr"
+                    ],
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 1.289,
+                    "travelDuration": 68,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "southwest",
+                    "details": [
+                      {
+                        "compassDegrees": 209,
+                        "endPathIndices": [
+                          125
+                        ],
+                        "locationCodes": [
+                          "114-11405"
+                        ],
+                        "maneuverType": "BearRight",
+                        "mode": "Driving",
+                        "names": [
+                          "E Sunset Way"
+                        ],
+                        "roadType": "Arterial",
+                        "startPathIndices": [
+                          121
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "BearRight",
+                      "text": "Bear right onto E Sunset Way"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.5305,
+                        -122.023427
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 0.738,
+                    "travelDuration": 81,
+                    "travelMode": "Driving"
+                  },
+                  {
+                    "compassDirection": "west",
+                    "details": [
+                      {
+                        "compassDegrees": 270,
+                        "endPathIndices": [
+                          125
+                        ],
+                        "locationCodes": [
+                          "114-11405"
+                        ],
+                        "maneuverType": "ArriveFinish",
+                        "mode": "Driving",
+                        "names": [
+                          "E Sunset Way"
+                        ],
+                        "roadType": "Arterial",
+                        "startPathIndices": [
+                          125
+                        ]
+                      }
+                    ],
+                    "exit": "",
+                    "hints": [
+                      {
+                        "hintType": "PreviousIntersection",
+                        "text": "The last intersection before your destination is 3rd Ave NE"
+                      }
+                    ],
+                    "iconType": "Auto",
+                    "instruction": {
+                      "formattedText": null,
+                      "maneuverType": "ArriveFinish",
+                      "text": "Arrive at Issaquah, WA"
+                    },
+                    "isRealTimeTransit": false,
+                    "maneuverPoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.530072,
+                        -122.032904
+                      ]
+                    },
+                    "realTimeTransitDelay": 0,
+                    "sideOfStreet": "Unknown",
+                    "tollZone": "",
+                    "transitTerminus": "",
+                    "travelDistance": 0,
+                    "travelDuration": 0,
+                    "travelMode": "Driving"
+                  }
+                ],
+                "routeRegion": "WWMX",
+                "routeSubLegs": [
+                  {
+                    "endWaypoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.530072,
+                        -122.032904
+                      ],
+                      "description": "Issaquah, WA",
+                      "isVia": false,
+                      "locationIdentifier": "0|129|125|215|174|161|0|9|1|0|0|224|1|0|0|0|0|0|47.530072,-122.032904",
+                      "routePathIndex": 125
+                    },
+                    "startWaypoint": {
+                      "type": "Point",
+                      "coordinates": [
+                        47.674913,
+                        -122.123995
+                      ],
+                      "description": "Redmond, WA",
+                      "isVia": false,
+                      "locationIdentifier": "0|129|125|215|174|41|241|250|0|0|0|224|1|0|0|0|0|0|47.674913,-122.123995",
+                      "routePathIndex": 0
+                    },
+                    "travelDistance": 29.236,
+                    "travelDuration": 1301
+                  }
+                ],
+                "startLocation": {
+                  "bbox": [
+                    47.627132,
+                    -122.165009,
+                    47.717033,
+                    -122.034622
+                  ],
+                  "name": "Redmond, WA",
+                  "point": {
+                    "type": "Point",
+                    "coordinates": [
+                      47.674911,
+                      -122.123993
+                    ]
+                  },
+                  "address": {
+                    "adminDistrict": "WA",
+                    "adminDistrict2": "King County",
+                    "countryRegion": "United States",
+                    "formattedAddress": "Redmond, WA",
+                    "locality": "Redmond"
+                  },
+                  "confidence": "High",
+                  "entityType": "PopulatedPlace",
+                  "geocodePoints": [
+                    {
+                      "type": "Point",
+                      "coordinates": [
+                        47.674911,
+                        -122.123993
+                      ],
+                      "calculationMethod": "Rooftop",
+                      "usageTypes": [
+                        "Display"
+                      ]
+                    }
+                  ],
+                  "matchCodes": [
+                    "Ambiguous"
+                  ]
+                },
+                "startTime": "\/Date(1633680641347-0700)\/",
+                "travelDistance": 29.236,
+                "travelDuration": 1301,
+                "travelMode": "Driving"
+              }
+            ],
+            "trafficCongestion": "None",
+            "trafficDataUsed": "None",
+            "travelDistance": 29.236,
+            "travelDuration": 1301,
+            "travelDurationTraffic": 1314,
+            "travelMode": "Driving"
+          }
+        ]
+      }
+    ],
+    "statusCode": 200,
+    "statusDescription": "OK",
+    "traceId": "2645de12c6b641aa8fc7ea7ca88cecdd|DU00002767|0.0.0.0|DU000005E9, Leg0-DU00001FE5|Ref A: 02085FC477524B708D31BA7C14B34C02 Ref B: DB3EDGE2106 Ref C: 2021-10-08T08:10:41Z|Ref A: 637970D9C70D4BB0BA3F34D35DEE4695 Ref B: DB3EDGE0714 Ref C: 2021-10-08T08:10:41Z"
+  }
