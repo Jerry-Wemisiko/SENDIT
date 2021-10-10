@@ -33,7 +33,7 @@ class Order(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
 
-        transit_status = [
+    transit_status = [
         ("In Transit", "In Transit"),
         ("Delivered", "Delivered"),
         ("Cancelled", "Cancelled")
