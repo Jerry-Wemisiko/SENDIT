@@ -8,3 +8,11 @@ class Location(models.Model):
 
     def __str__(self):
         return self.name
+
+class CustomUser(AbstractUser):
+    email = models.EmailField(null=False)
+    phonenumber = models.CharField(max_length=100, null=False)
+    address = models.ForeignKey(Location, null=True, on_delete=models.CASCADE, related_name='address')
+
+    def __str__(self):
+        return self.username
