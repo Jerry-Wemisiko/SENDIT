@@ -16,3 +16,16 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+class Order(models.Model):
+    user = models.ForeignKey(CustomUser, null=True, on_delete=models.CASCADE, related_name='orders')
+    load_size = models.CharField(choices=load_sizes, max_length=50, null=False)
+    start_location = models.ForeignKey(Location, null=True, on_delete=models.CASCADE, related_name='start_location')
+    destination_location = models.ForeignKey(Location, null=True, on_delete=models.CASCADE,
+                                             related_name='destination_location')
+    pickup_time = models.DateTimeField(default=timezone.now)
+    price = models.DecimalField( max_digits=15, decimal_places=2, null=True)
+    description = models.TextField(null=False)
+    transit_status = models.CharField(choices=transit_status, default='In Transit', max_length=100)
+    created_at = models.DateTimeField(default=timezone.now)
+
