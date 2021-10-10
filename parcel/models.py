@@ -1,4 +1,7 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.utils import timezone
+
 
 # Create your models here.
 class Location(models.Model):
@@ -29,3 +32,15 @@ class Order(models.Model):
     transit_status = models.CharField(choices=transit_status, default='In Transit', max_length=100)
     created_at = models.DateTimeField(default=timezone.now)
 
+
+    transit_status = [
+    ("In Transit", "In Transit"),
+    ("Delivered", "Delivered"),
+    ("Cancelled", "Cancelled")
+]
+
+load_sizes = [
+    ("Small", "Small"),
+    ("Medium", "Medium"),
+    ("Large", "Large")
+]
