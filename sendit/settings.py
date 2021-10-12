@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-z21jd*8@-=&_nz2-8l9i@l7_th$wsgc2-+6noqoocqg+*7dsl)'
-
+BING_MAPS_KEY = 'AhEcqMNgSEuSSdCFbjT6FynGsBp-wYU0noT0Ivq4OMFf7c-cNG7dxnJeiS8Giyzg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (environ.get('DEBUG', 'False')=='True')
 DEBUG = True
@@ -50,8 +50,25 @@ INSTALLED_APPS =[
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework.authtoken',
+    'corsheaders',
 ]
 AUTH_USER_MODEL = 'parcel.CustomUser'
+
+AUTH_USER_MODEL = 'parcel.CustomUser'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+   ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,6 +80,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGINS_ALLOW_ALL = True
 
 ROOT_URLCONF = 'sendit.urls'
 
