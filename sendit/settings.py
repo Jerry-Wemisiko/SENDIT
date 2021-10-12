@@ -53,6 +53,7 @@ INSTALLED_APPS =[
     'rest_framework.authtoken',
     'corsheaders',
 ]
+AUTH_USER_MODEL = 'parcel.CustomUser'
 
 AUTH_USER_MODEL = 'parcel.CustomUser'
 
@@ -145,7 +146,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 

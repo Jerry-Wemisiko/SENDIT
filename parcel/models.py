@@ -45,5 +45,3 @@ class Order(models.Model):
     transit_status = models.CharField(choices=transit_status, default='In Transit', max_length=100)
     created_at = models.DateTimeField(default=timezone.now)
 
-
-

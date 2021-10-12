@@ -49,7 +49,6 @@ class LoginUserSerializer(serializers.Serializer):
         data['user'] = user
         return data
 
-
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order

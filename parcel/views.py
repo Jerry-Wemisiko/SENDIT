@@ -1,3 +1,36 @@
+
+from django.shortcuts import render
+from rest_framework import viewsets
+from rest_framework import permissions
+from .models import CustomUser, Order, Location
+from .serializers import UserSerializer, OrderSerializer, LocationSerializer
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = CustomUser.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+
+class OrderViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = Order.objects.all().order_by('-created_at')
+    serializer_class = OrderSerializer
+
+# class OrderDetail(viewsets.ModelViewSet):
+    
+
+class LocationViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = Location.objects.all()
+    serializer_class = LocationSerializer
+
+=======
 from django.contrib.auth import login, logout
 from django.contrib.auth.models import update_last_login
 from rest_framework import viewsets, generics, status, permissions
@@ -52,3 +85,4 @@ class OrderViewSet(viewsets.ModelViewSet):
 class LocationViewSet(viewsets.ModelViewSet):
     queryset = Location.objects.all()
     serializer_class = LocationSerializer
+
