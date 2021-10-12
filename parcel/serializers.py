@@ -6,7 +6,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = CustomUser
         fields = ['url', "first_name", "last_name", "phonenumber","username", 'email', "address", "orders"]
-
+#Add a user object
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

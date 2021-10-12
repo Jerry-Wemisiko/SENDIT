@@ -11,7 +11,9 @@ router.register(r'locations', parcel_views.LocationViewSet)
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    # path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
+    path('api/register/', parcel_views.UserCreateAPIView.as_view(), name='register'),
+    path('api/login/', parcel_views.UserLoginAPIView.as_view(), name='login'),
+    path('api/logout/', parcel_views.logout_view, name='logout'),
 ]

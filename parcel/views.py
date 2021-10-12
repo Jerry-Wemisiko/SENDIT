@@ -19,6 +19,9 @@ class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all().order_by('-created_at')
     serializer_class = OrderSerializer
 
+# class OrderDetail(viewsets.ModelViewSet):
+    
+
 class LocationViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
