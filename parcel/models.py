@@ -4,6 +4,19 @@ from django.utils import timezone
 
 
 # Create your models here.
+
+transit_status = [
+    ("In Transit", "In Transit"),
+    ("Delivered", "Delivered"),
+    ("Cancelled", "Cancelled")
+]
+
+load_sizes = [
+    ("Small", "Small"),
+    ("Medium", "Medium"),
+    ("Large", "Large")
+]
+
 class Location(models.Model):
     name = models.CharField(max_length=100, null=False)
     longitude = models.FloatField()
@@ -33,14 +46,4 @@ class Order(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
 
-    transit_status = [
-        ("In Transit", "In Transit"),
-        ("Delivered", "Delivered"),
-        ("Cancelled", "Cancelled")
-    ]
-
-    load_sizes = [
-        ("Small", "Small"),
-        ("Medium", "Medium"),
-        ("Large", "Large")
-    ]
+  
