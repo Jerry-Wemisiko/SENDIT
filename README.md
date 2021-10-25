@@ -3,7 +3,7 @@
 ## Author
 * Jerry Wemisiko
 * Maxmillan Kuya
-* Victor Kipton
+* Kiptoo Victor 
 * Easther Mutheu
 
 ## Description
